@@ -1,94 +1,117 @@
-
 <!DOCTYPE html>
 
 <html>
+<head>
   <title>Diana Halikias</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-a:link {
-
-color:#6323ad;
-
-background-color: transparent;
-
-text-decoration: none;
-
+body {
+  background-color: #CAF2CF;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #4B3267;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px 40px 30px;
+  line-height: 1.7;
 }
 
-
+a:link {
+  color: #6323ad;
+  text-decoration: none;
+}
 
 a:visited {
-
-color: #175208;
-
-background-color: transparent;
-
-text-decoration: none;
-
+  color: #175208;
+  text-decoration: none;
 }
-
-
 
 a:hover {
-
-color: #eab500;
-
-background-color: transparent;
-
-text-decoration: underline;
-
+  color: #eab500;
+  text-decoration: underline;
 }
-
-
 
 a:active {
-
-color: #001B79;
-
-background-color: transparent;
-
-text-decoration: underline;
-
+  color: #001B79;
+  text-decoration: underline;
 }
 
-
-
-article {
-
-float: left;
-
-padding: 30px;
-
-text-align: left;
-
-width: 70%
-
-
-
+h1 {
+  color: #4B3267;
+  font-family: 'Garamond', Georgia, serif;
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
 }
 
-
-
-aside {
-
-float: left;
-
+h3 {
+  color: #4B3267;
+  font-family: 'Garamond', Georgia, serif;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #4B3267;
+  margin: 24px 0;
+  opacity: 0.4;
+}
 
+/* Intro section with photo */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 10px;
+}
 
+.intro img {
+  height: 300px;
+  width: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
 
+.intro p {
+  margin: 0;
+}
+
+/* Research and other list items */
+ul.paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.paper-list li {
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+ul.plain-list {
+  list-style: disc;
+  padding-left: 28px;
+  margin: 6px 0;
+}
+
+ul.plain-list li {
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0.4em;
+}
+
+section {
+  margin-bottom: 6px;
+}
 
 </style>
+</head>
 
-
-
-
-
-<body style="background-color:#CAF2CF;">
-
+<body>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK00730MBF"></script>
@@ -96,122 +119,116 @@ float: left;
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-VK00730MBF');
     </script>
 
+<h1>Diana Chua Halikias</h1>
 
-<h1 style="color:#4B3267; font-family:'Garamond'; padding-left:20px;"> Diana Chua Halikias</h1>
-
-
-
-<div style="float: left"><IMG SRC="diana.JPG" HEIGHT=330 WIDTH=auto hspace="20" vspace="0"></div>
-
-<p style="color:#4B3267" style="padding-left:100px">
-
-Welcome! I am a Courant Instructor in the Department of Mathematics at NYU, where I  work primarily with <a href="https://www.chrismusco.com/">Chris Musco</a>. Previously, I was a Simons-Berkeley Research Fellow in the program on <a href="https://simons.berkeley.edu/programs/complexity-linear-algebra">Complexity and Linear Algebra</a>.   My research is broadly in numerical analysis and scientific machine learning. I am especially  interested in  randomized  linear algebra, matrix theory, and operator learning.
-
-In May 2025, I graduated with a PhD in math from Cornell, where I was very fortunate to be advised by <a href="https://pi.math.cornell.edu/~ajt/">Alex Townsend</a>. <br/>
-
-<br /> In the summer of 2024, I interned in the Center for Computational Mathematics at the Flatiron Institute and worked with Lawrence Saul. Previously, I interned in the Machine Learning and Analytics group run by Michael Mahoney at Lawrence Berkeley National Laboratory. <br/> Before Cornell, I completed my undergraduate degree in math at Yale. <br/> <br /> My CV is <a href="halikias_CV.pdf">here</a>. You can email me at diana.halikias at nyu dot edu. </br>
-
-</p>
-
+<div class="intro">
+  <img src="diana.JPG" alt="Diana Halikias">
+  <p>
+    Welcome! I am a Courant Instructor in the Department of Mathematics at NYU, where I work primarily with <a href="https://www.chrismusco.com/">Chris Musco</a>. Previously, I was a Simons-Berkeley Research Fellow in the program on <a href="https://simons.berkeley.edu/programs/complexity-linear-algebra">Complexity and Linear Algebra</a>. My research is broadly in numerical analysis and scientific machine learning. I am especially interested in randomized linear algebra, matrix theory, and operator learning.
+    <br/><br/>
+    In May 2025, I graduated with a PhD in math from Cornell, where I was very fortunate to be advised by <a href="https://pi.math.cornell.edu/~ajt/">Alex Townsend</a>.
+    <br/><br/>
+    In the summer of 2024, I interned in the Center for Computational Mathematics at the Flatiron Institute and worked with Lawrence Saul. Previously, I interned in the Machine Learning and Analytics group run by Michael Mahoney at Lawrence Berkeley National Laboratory. Before Cornell, I completed my undergraduate degree in math at Yale.
+    <br/><br/>
+    My CV is <a href="halikias_CV.pdf">here</a>. You can email me at diana.halikias at nyu dot edu.
+  </p>
 </div>
-
-<hr style="color:#4B3267">
-<h3 style="color:#4B3267; font-family:'Garamond';padding-left:20px;"> Activities </h3>
-
-As part of the Simons program last semester, we organized a weekly seminar on  <a href="https://sites.google.com/cornell.edu/rpod-matrix-computations/about">Recent Progress and Open Directions in Matrix Computations</a>. 
-<hr style="color:#4B3267">
-
-
-<h3 style="color:#4B3267; font-family:'Garamond';padding-left:20px;"> Research </h3>
-<li style="color:#4B3267;padding-left:20px"> <b>Quasi-optimal hierarchically semi-separable matrix approximation
-</b> <br> with Noah Amsel,  Tyler Chen, Feyza Duman Keles, Cameron Musco, Christopher Musco, and David Persson,<i> to appear in SIAM J. Matrix Anal. Appl.,  (2025). </i>
-(<a href="https://arxiv.org/abs/2505.16937">arxiv</a>).</br></li>
-<li style="color:#4B3267;padding-left:20px"> <b>Fixed-sparsity matrix approximation from matrix-vector products </b> <br> with Noah Amsel, Tyler Chen, Feyza Duman Keles, Cameron Musco, and Christopher Musco, <i> to appear in SIAM J. Matrix Anal. Appl.,  (2025). </i>
-  (<a href="https://arxiv.org/abs/2402.09379">arxiv</a>).</br></li>
-<li style="color:#4B3267;padding-left:20px"> <b>Near-optimal hierarchical matrix approximation from matrix-vector products</b> <br> with Tyler Chen, Feyza Duman Keles, Cameron Musco, Christopher Musco, and David Persson,<i> ACM-SIAM Symposium on Discrete Algorithms (2025). </i>
- (<a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611978322.87">journal</a>, <a href="https://arxiv.org/abs/2407.04686">arxiv</a>).</br></li>
-
-
-<li style="color:#4B3267;padding-left:20px"> <b> Operator learning without the adjoint </b> <br> with Nicolas Boull&#233;, Samuel Otto, and Alex Townsend, <i> J. Mach. Learn. Res. (2024). </i>
- (<a href="https://jmlr.org/papers/v25/24-0162.html">journal</a>, <a href="https://arxiv.org/abs/2401.17739">arxiv</a>).</br></li>
-
-<li style="color:#4B3267;padding-left:20px"> <b> Elliptic PDE learning is provably data-efficient </b> <br> with Nicolas Boull&#233; and Alex Townsend, <i> PNAS Brief Report Vol. 120, no. 39, (2023). </i>
-    (<a href="https://www.pnas.org/doi/10.1073/pnas.2303904120">journal</a>, <a href="https://arxiv.org/abs/2302.12888">arxiv</a>).</br></li>
-
-<li style="color:#4B3267;padding-left:20px"> <b> Structured matrix recovery from matrix-vector products </b> <br> with Alex Townsend, <i> Numer Linear Algebra Appl. e2531, (2023). </i>  (<a href="https://onlinelibrary.wiley.com/doi/10.1002/nla.2531">journal</a>, <a href="https://arxiv.org/abs/2212.09841">arxiv</a>).</br></li>
-
-<li style="color:#4B3267;padding-left:20px"> <b> Arbitrary depth universal approximation theorems for operator neural networks </b> <br> with Annan Yu, Chlo&eacute; Becquey, Matthew Mallory and Alex Townsend, <i> preprint. </i> (<a href="https://arxiv.org/abs/2109.11354">arxiv</a>)</li>
-
-<li style="color:#4B3267;padding-left:20px"> <b> Discrete variants of Brunn-Minkowski type inequalities </b> <br> with Bo'az Klartag and Boaz Slomka,  <i> Ann. Fac. Sci. Toulouse Math. (6), Vol. 30, no. 2, (2021), 267-279. </i> (<a href="https://afst.centre-mersenne.org/articles/10.5802/afst.1674/">journal</a>, <a href="https://arxiv.org/abs/1911.04392">arxiv</a>).</li>
-
-<li style="color:#4B3267;padding-left:20px"> <b> A Cheeger inequality for graphs based on a
-reflection principle </b> <br> with Ed Gelernt, Charlie Kenney, and Nicholas Marshall,  <i> Involve 13 no. 3, (2020) 475-486 </i> (<a href="https://msp.org/involve/2020/13-3/p08.xhtml">journal</a>, <a href="https://arxiv.org/abs/1902.06633">arxiv</a>).</li> </br>
-
-<hr style="color:#4B3267">
-
-<h3 style="color:#4B3267; font-family:'Garamond';padding-left:20px;"> Teaching </h3>
-
-
-<p style="color:#4B3267; padding-left:20px">
-<b>New York University</b>
-<li style="color:#4B3267;padding-left:20px">Spring 2026: Math UA-185 (Instructor)</li>
-
-<p style="color:#4B3267; padding-left:20px">
-
-<b>Cornell</b>
-<li style="color:#4B3267;padding-left:20px">Fall 2023: Math 2210 (Teaching Assistant)</li>
-
-<p style="color:#4B3267; padding-left:20px">
-
-<b>Yale</b>
-<li style="color:#4B3267;padding-left:20px">Spring 2020: Math 231 (Peer Tutor)</li>
-<li style="color:#4B3267;padding-left:20px">Fall 2019: Math 230 (Peer Tutor)</li>
-<li style="color:#4B3267;padding-left:20px">Spring 2019: Math 244 (Peer Tutor)</li>
-<li style="color:#4B3267;padding-left:20px">Fall 2018: Math 115 (Peer Tutor)</li>
-
-<hr style="color:#4B3267">
-
-
-
-<h3 style="color:#4B3267; font-family:'Garamond';padding-left:20px;"> Outreach </h3>
-
-
-<p style="color:#4B3267; padding-left:20px">
-
-<li style="color:#4B3267;padding-left:20px"> I ran a Little Math Circle for children in grades K-5 in the Ithaca area. </li>
-<li style="color:#4B3267;padding-left:20px"> I mentored a research project on the theoretical aspects of machine learning as part of the 2021 Cornell <a href="https://math.cornell.edu/history-reu-and-spur-summer-program-undergraduate-research-programs">REU</a>. </li>
-<li style="color:#4B3267;padding-left:20px"> I also mentored two directed reading projects with Cornell undergraduates on spectral graph theory. </li>
 
 <hr>
 
-<h3 style="color:#4B3267; font-family:'Garamond';padding-left:20px;"> Miscellaneous </h3>
+<section>
+<h3>Activities</h3>
+<p>As part of the Simons program last semester, we organized a weekly seminar on <a href="https://sites.google.com/cornell.edu/rpod-matrix-computations/about">Recent Progress and Open Directions in Matrix Computations</a>.</p>
+</section>
 
-<p style="color:#4B3267; padding-left:20px">
-For three years, I was the trivia host at Cornell's graduate weekly trivia night at the <a href="https://gradschool.cornell.edu/student-experience/big-red-barn/">Big Red Barn</a>! </br>
+<hr>
 
-I also love <a href="climb.jpeg"> rock climbing </a> and playing piano. </br>
+<section>
+<h3>Research</h3>
+<ul class="paper-list">
+  <li><b>Quasi-optimal hierarchically semi-separable matrix approximation</b><br>
+    with Noah Amsel, Tyler Chen, Feyza Duman Keles, Cameron Musco, Christopher Musco, and David Persson, <i>to appear in SIAM J. Matrix Anal. Appl., (2025).</i>
+    (<a href="https://arxiv.org/abs/2505.16937">arxiv</a>)</li>
 
-At Yale, I worked for three years in the <a href="https://artgallery.yale.edu/numismatics">Numismatics department</a> of the Yale University Art Gallery.
+  <li><b>Fixed-sparsity matrix approximation from matrix-vector products</b><br>
+    with Noah Amsel, Tyler Chen, Feyza Duman Keles, Cameron Musco, and Christopher Musco, <i>to appear in SIAM J. Matrix Anal. Appl., (2025).</i>
+    (<a href="https://arxiv.org/abs/2402.09379">arxiv</a>)</li>
 
+  <li><b>Near-optimal hierarchical matrix approximation from matrix-vector products</b><br>
+    with Tyler Chen, Feyza Duman Keles, Cameron Musco, Christopher Musco, and David Persson, <i>ACM-SIAM Symposium on Discrete Algorithms (2025).</i>
+    (<a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611978322.87">journal</a>, <a href="https://arxiv.org/abs/2407.04686">arxiv</a>)</li>
 
+  <li><b>Operator learning without the adjoint</b><br>
+    with Nicolas Boull&#233;, Samuel Otto, and Alex Townsend, <i>J. Mach. Learn. Res. (2024).</i>
+    (<a href="https://jmlr.org/papers/v25/24-0162.html">journal</a>, <a href="https://arxiv.org/abs/2401.17739">arxiv</a>)</li>
+
+  <li><b>Elliptic PDE learning is provably data-efficient</b><br>
+    with Nicolas Boull&#233; and Alex Townsend, <i>PNAS Brief Report Vol. 120, no. 39, (2023).</i>
+    (<a href="https://www.pnas.org/doi/10.1073/pnas.2303904120">journal</a>, <a href="https://arxiv.org/abs/2302.12888">arxiv</a>)</li>
+
+  <li><b>Structured matrix recovery from matrix-vector products</b><br>
+    with Alex Townsend, <i>Numer Linear Algebra Appl. e2531, (2023).</i>
+    (<a href="https://onlinelibrary.wiley.com/doi/10.1002/nla.2531">journal</a>, <a href="https://arxiv.org/abs/2212.09841">arxiv</a>)</li>
+
+  <li><b>Arbitrary depth universal approximation theorems for operator neural networks</b><br>
+    with Annan Yu, Chlo&eacute; Becquey, Matthew Mallory and Alex Townsend, <i>preprint.</i>
+    (<a href="https://arxiv.org/abs/2109.11354">arxiv</a>)</li>
+
+  <li><b>Discrete variants of Brunn-Minkowski type inequalities</b><br>
+    with Bo'az Klartag and Boaz Slomka, <i>Ann. Fac. Sci. Toulouse Math. (6), Vol. 30, no. 2, (2021), 267-279.</i>
+    (<a href="https://afst.centre-mersenne.org/articles/10.5802/afst.1674/">journal</a>, <a href="https://arxiv.org/abs/1911.04392">arxiv</a>)</li>
+
+  <li><b>A Cheeger inequality for graphs based on a reflection principle</b><br>
+    with Ed Gelernt, Charlie Kenney, and Nicholas Marshall, <i>Involve 13 no. 3, (2020) 475-486.</i>
+    (<a href="https://msp.org/involve/2020/13-3/p08.xhtml">journal</a>, <a href="https://arxiv.org/abs/1902.06633">arxiv</a>)</li>
+</ul>
+</section>
+
+<hr>
+
+<section>
+<h3>Teaching</h3>
+  <p><b>New York University</b></p>
+<ul class="plain-list">
+  <li>Spring 2026: Math UA-185 (Instructor)</li>
+</ul>
+<p><b>Cornell</b></p>
+<ul class="plain-list">
+  <li>Fall 2023: Math 2210 (Teaching Assistant)</li>
+</ul>
+<p><b>Yale</b></p>
+<ul class="plain-list">
+  <li>Spring 2020: Math 231 (Peer Tutor)</li>
+  <li>Fall 2019: Math 230 (Peer Tutor)</li>
+  <li>Spring 2019: Math 244 (Peer Tutor)</li>
+  <li>Fall 2018: Math 115 (Peer Tutor)</li>
+</ul>
+</section>
+
+<hr>
+
+<section>
+<h3>Outreach</h3>
+<ul class="plain-list">
+  <li>I ran a Little Math Circle for children in grades K-5 in the Ithaca area.</li>
+  <li>I mentored a research project on the theoretical aspects of machine learning as part of the 2021 Cornell <a href="https://math.cornell.edu/history-reu-and-spur-summer-program-undergraduate-research-programs">REU</a>.</li>
+  <li>I also mentored two directed reading projects with Cornell undergraduates on spectral graph theory.</li>
+</ul>
+</section>
+
+<hr>
+
+<section>
+<h3>Miscellaneous</h3>
+<p>
+  For three years, I was the trivia host at Cornell's graduate weekly trivia night at the <a href="https://gradschool.cornell.edu/student-experience/big-red-barn/">Big Red Barn</a>!<br/>
+  I also love <a href="climb.jpeg">rock climbing</a> and playing piano.<br/>
+  At Yale, I worked for three years in the <a href="https://artgallery.yale.edu/numismatics">Numismatics department</a> of the Yale University Art Gallery.
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
 
 </body>
-
 </html>
